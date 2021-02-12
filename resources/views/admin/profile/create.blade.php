@@ -1,4 +1,4 @@
-@extends('layouts.profile')
+@extends('layouts.admin')
 @section('title', 'Myプロフィールの新規作成')
 
 @section('content')
@@ -47,5 +47,5 @@
             </div>
         </div>
     </div>
-    @endsection 
+    
                             

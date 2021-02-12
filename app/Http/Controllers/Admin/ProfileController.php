@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\profile;
+use App\Profile;
 use App\Profile_history;
 use Carbon\Carbon;
 class ProfileController extends Controller
@@ -31,7 +31,7 @@ class ProfileController extends Controller
         $cond_name =$request->cond_name;
         if ($cond_name !=''){
             //検索されたら検索結果を所得する
-            $posts =Profile::where('name',$cond_name)->get();
+            $posts = Profile::where('name',$cond_name)->get();
         }else{
             //それ以外所得
             $posts = Profile::all();
